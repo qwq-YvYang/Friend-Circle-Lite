@@ -2,7 +2,8 @@ name: Friend Circle Lite
 
 on:
   schedule:
-    - cron: "0 */4 * * *"
+    # 修改为北京时间每天 00:00（UTC 时间 16:00）
+    - cron: "0 16 * * *"  # UTC 16:00 = 北京时间 00:00 (次日)
   workflow_dispatch:
 
 env:
